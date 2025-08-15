@@ -65,3 +65,24 @@ name, age = form.details()
 print(f"my name is {name}, and my age is  {age}")
 
 
+
+
+""" Activity 2: Polymorphism Challenge! 🎭
+Create a program that includes animals or vehicles with the same action (like move()). 
+However, make each class define move() differently
+(for example, Car.move() prints "Driving" 🚗, while Plane.move() prints "Flying" ✈️). """
+
+class dog:
+    def food(self):
+         return "bone"
+    
+class goat:
+     def food(self):
+          return "grass"
+     
+class donkey:
+     def food(self):
+          return "grass"
+     
+for AnimalFood in [dog(), goat(), donkey()]:
+     print(AnimalFood.food())
